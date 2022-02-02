@@ -1,6 +1,4 @@
-# Lpc2184-codes
-/************************************************* Read Me *********************************************************/
-/*http://www.ocfreaks.com/lpc2148-interrupt-tutorial/
+
 Interrupt in Lpc2148:-(1)FIQ (2)VectIRQ (3)NonVecIRQ
 Interrupt handle by VIC controller in Lpc2148.VIC can handle 32 interrupt request input
 but only 16 request can be assigned to a vectored IRQ interrupt in LPc2148.We are given a set of 16 vectored IRQ slots 
@@ -21,7 +19,7 @@ __irq void my_isr(void){
 void my_isr(void) __irq {
 ------------
 }
-https://www.embeddedrelated.com/showarticle/469.php
+
 External interrupt Types and Polarity:->
 -->The external interrupt can be level and edge triggered.
       Level
@@ -36,4 +34,3 @@ External interrupt Types and Polarity:->
 -->The second expact of external interrupt is polarity
     --> For Edge triggered, polarity could be rising edge triggered(0-1) or falling edge triggerd(1-0).
 		--> For level triggered, polarity could be low triggered(whenever the input is 0) or high triggerd (whenever the input is 1).
-*/
